@@ -52,6 +52,7 @@ class ProdutoController extends Controller
         }
 
         $produto->delete();
-        return response()->json($produto, 200);
+        return response()->json(null, 204);
+        // return response()->json($produto, 200);
     }
 }
